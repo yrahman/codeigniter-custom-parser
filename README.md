@@ -1,5 +1,6 @@
 # codeigniter-custom-parser
 CodeIgniter Custom Parser
+
 This is only extended CodeIgniter parser class, add some features below.
 - Add numbering for foreach list
 - Support multidimensional array
@@ -10,7 +11,7 @@ This is only extended CodeIgniter parser class, add some features below.
 Just use `{num}` in foreach
 - Example:
 You have this array data:
-```
+```php
 $data['fruits'] = array(
 	array(
 		'name'=> 'Apple',
@@ -29,7 +30,7 @@ $this->parser->parse('some_view', $data);
 ```
 
 So, in your view just add `{num}`.
-```
+```html
 {fruits}
 <tr>
 	<td>{num}</td>
@@ -43,7 +44,7 @@ Ofcourse it works with database result `$query->result_array()`
 ## multidimensional array
 No special, just use like normal array data
 
-```
+```php
 //data
 $data['transportations'] = array(
 	'cars' => $buses, // array of buses
@@ -53,7 +54,7 @@ $data['transportations'] = array(
 ```
 
 
-```
+```html
 {transportations}
 	{cars}
 		{bus}
@@ -61,7 +62,7 @@ $data['transportations'] = array(
 		{/bus}
 	{/cars}
 	...
-	//if it's not array inside multidimensional
+	<!--if it's not array inside multidimensional -->
 	{cars.total}
 	
 {/transportations}
