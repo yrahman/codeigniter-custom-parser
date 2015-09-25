@@ -53,11 +53,28 @@ Ofcourse it works with database result `$query->result_array()`
 No special, just use like normal array data
 
 ```php
-//data
-$data['transportations'] = array(
-	'cars' => $buses, // array of buses
-	'trains' => $trains, //array of trains
+
+$buses = array(
+	array(
+		'name' => 'Trans Jakarta',
+		'year' => '2011'
+	),
+	array(
+                'name' => 'Kopaja',
+                'year' => '1998'
+        ),
+	array(
+                'name' => 'Metromini',
+                'year' => '1980'
+        ),
 	'total' => 20 //non-array data
+);
+
+$trains = array();
+
+$data['transportations'] = array(
+	'cars' => $buses, //array of buses
+	'trains' => $trains, //array of trains
 );
 ```
 
