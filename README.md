@@ -1,14 +1,18 @@
-# codeigniter-custom-parser
-Custom Parser for Codeigniter v2
+# Description
+Custom Template Parser for Codeigniter v2.x
 
 This is old code I used when develop some apps using CodeIgniter.
-I should upload this earlier. But however maybe this works with CI v3 too.
-Never try v3
+I should upload this earlier. But however maybe someone still use v2.x
+
+For anyone don't know what template parser, [here](https://codeigniter.com/userguide2/libraries/parser.html)
 
 This is only extended CodeIgniter parser class, add some features below.
 - Add numbering for foreach list
 - Support multidimensional array
 - Leave empty for not found parsing
+
+# installation
+- Copy `application/libraries/MY_Parser.php` to your CodeIgniter structure
 
 # usage
 ## numbering
