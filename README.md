@@ -1,5 +1,9 @@
 # codeigniter-custom-parser
-CodeIgniter Custom Parser
+Custom Parser for Codeigniter v2
+
+This is old code I used when develop some apps using CodeIgniter.
+I should upload this earlier. But however maybe this works with CI v3 too.
+Never try v3
 
 This is only extended CodeIgniter parser class, add some features below.
 - Add numbering for foreach list
