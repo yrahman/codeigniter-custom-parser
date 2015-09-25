@@ -85,11 +85,10 @@ $data['transportations'] = array(
 		{bus}
 			{name}
 		{/bus}
+		<!--if it's not array inside multidimensional -->
+        	{bus.total}
 	{/cars}
-	...
-	<!--if it's not array inside multidimensional -->
-	{cars.total}
-	
+	...	
 {/transportations}
 ```
 
